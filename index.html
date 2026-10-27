@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sacro Ofício 3D — Arte Sacra em Impressão 3D</title>
 <meta name="description" content="Peças de arte sacra e presentes personalizados em impressão 3D. Escolha, monte seu pedido e finalize direto no WhatsApp.">
-<link rel="icon" href="data:image/png;base64,">
+<link rel="icon" href="logo.png">
 <style>
   :root{
     --vermelho:#8e1b1b; --vermelho2:#6e1212; --marrom:#5b3a24; --dourado:#c9a227;
@@ -112,7 +112,7 @@
 <header>
   <div class="hwrap">
     <div class="marca">
-      <img src="LOGO_DATA" alt="Sacro Ofício 3D">
+      <img src="logo.png" alt="Sacro Ofício 3D">
       <div class="nome">SACRO OFÍCIO 3D<small>ARTE SACRA EM IMPRESSÃO 3D</small></div>
     </div>
     <button class="cartbtn" onclick="abrirCart()">🛒 Pedido <span id="conta">(0)</span></button>
@@ -120,7 +120,7 @@
 </header>
 
 <div class="hero">
-  <img src="LOGO_DATA" alt="Sacro Ofício 3D">
+  <img src="logo.png" alt="Sacro Ofício 3D">
   <h1>Arte sacra e peças personalizadas em impressão 3D</h1>
   <p>Escolha suas peças, monte o pedido e finalize direto no WhatsApp. Pagamento via Pix ou cartão na entrega.</p>
   <span class="selo">✠ FEITO COM DEDICAÇÃO, PEÇA POR PEÇA</span>
@@ -246,7 +246,6 @@ let catalogo = [];
 let carrinho = {};
 let filtro = "Todos";
 let editandoId = null;
-let fotoPendente = null; // (legado)
 
 function carregar(){
   try{
@@ -352,7 +351,6 @@ Aguardo a confirmação. Obrigado!`;
 }
 
 /* ================== ADM ================== */
-const PIN_HASH = "a1b2c3"; // substituído na inicialização
 let pinTentativas = 0;
 
 function hashPin(s){ let h=0; for(let i=0;i<s.length;i++){h=(h*31+s.charCodeAt(i))|0;} return String(h); }
